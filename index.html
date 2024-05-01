@@ -29,6 +29,7 @@
 
     <main>
 
+
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -139,10 +140,7 @@
                 </video>
             </div>
         </section>
-        <audio autoplay loop>
-            <source src="music.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+       
         
         
  <section class="contact-section section-padding" id="section_6">
@@ -308,6 +306,8 @@
         </div>
     </footer>
 
+    <audio id="my_audio" src="/music.mp3" loop="loop"></audio>
+
     <!--
 
 T e m p l a t e M o
@@ -320,6 +320,10 @@ T e m p l a t e M o
     <script src="js/jquery.sticky.js"></script>
     <script src="js/click-scroll.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        window.onload = function() {
+            document.getElementById("my_audio").play();
+    </script>
 
 </body>
 
